@@ -111,7 +111,7 @@ addEventListener('keypress', function(event) {
         stage = 1;
     }
 });
-addEventListener('click', function(event) {
+document.addEventListener('click', function() {
     if (stage == 1) {
         bird.yke = 15;
     } else if (stage == 0) {
