@@ -111,6 +111,19 @@ addEventListener('keypress', function(event) {
         stage = 1;
     }
 });
+addEventListener('click', function(event) {
+    if (stage == 1) {
+        bird.yke = 15;
+    } else if (stage == 0) {
+        score = 0;
+        newHighscore = "false";
+        pipe1.pipeReset(canvas.width);
+        pipe2.pipeReset(canvas.width + 700);
+        bird.y = 10;
+        bird.yke = 0;
+        stage = 1;
+    }
+});
 
 /*addEventListener('keydown', function(event) {
     keysDown[event.keyCode] = true;
