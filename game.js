@@ -121,6 +121,7 @@ document.addEventListener('click', function() {
         pipe2.pipeReset(canvas.width + 700);
         bird.y = 10;
         bird.yke = 0;
+        console.log("click");
         stage = 1;
     }
 });
