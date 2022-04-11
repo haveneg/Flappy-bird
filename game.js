@@ -1,9 +1,9 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
-
-canvas.width = window.innerwidth - 20;
-
+if (canvas.width > window.innerWidth) {
+    canvas.width = window.innerWidth - 20;
+}
 
 let keysDown = {};
 
