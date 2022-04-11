@@ -1,7 +1,7 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
-if (canvas.width < window.innerwidth) {
+if (canvas.width > window.innerwidth) {
     canvas.width = window.innerwidth - 20;
 }
 
