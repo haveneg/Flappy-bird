@@ -14,6 +14,7 @@ let stage = 0;
 let score = 0;
 
 let highscore = window.localStorage.getItem("highscore") || 0;
+alert(window.localStorage.getItem("highscore");
 
 let newHighscore = "false";
 
