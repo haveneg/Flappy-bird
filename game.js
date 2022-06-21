@@ -13,7 +13,7 @@ let stage = 0;
 
 let score = 0;
 
-let highscore = 0;
+let highscore = window.localStorage.getItem("highscore") || 0;
 
 let newHighscore = "false";
 
@@ -96,6 +96,7 @@ function gameOver() {
     if (score > highscore) {
         highscore = score;
         newHighscore = "true";
+        window.localStorage.setItem("highscore", highscore);
     }
     stage = 0;
 }
