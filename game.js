@@ -40,7 +40,7 @@ class Pipe {
     constructor(x) {
         this.x = x;
         this.gapPosition = Math.floor(Math.random() * (canvas.height - 300)) + 150;
-        this.gapHeight = 800;
+        this.gapHeight = 300;
         this.scoreCarrier = 12456543456;
     }
     pipeMove() {
