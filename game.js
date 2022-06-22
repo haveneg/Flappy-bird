@@ -11,9 +11,9 @@ let delay = 16.666;
 
 let stage = 0;
 
-let score = 100;
+let score = 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
 
-let highscore = window.localStorage.getItem("highscore") || 100;
+let highscore = window.localStorage.getItem("highscore") || 100000000000000000000000000000000000000000000000000000000000000000;
 
 let newHighscore = "false";
 
