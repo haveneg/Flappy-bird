@@ -15,8 +15,6 @@ let score = 0;
 
 let highscore = window.localStorage.getItem("highscore") || 0;
 
-window.localStorage.setItem("highscore", 0);
-
 let newHighscore = "false";
 
 var sound;
@@ -43,7 +41,7 @@ class Pipe {
         this.x = x;
         this.gapPosition = Math.floor(Math.random() * (canvas.height - 300)) + 150;
         this.gapHeight = 150;
-        this.scoreCarrier = 12456543456;
+        this.scoreCarrier = 1;
     }
     pipeMove() {
         if (stage == 1) {
