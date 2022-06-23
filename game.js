@@ -76,7 +76,7 @@ class Pipe {
 }
 
 const pipe1 = new Pipe(canvas.width);
-const pipe2 = new Pipe(canvas.width + 500);
+const pipe2 = new Pipe(canvas.width * 1.5);
 
 //gravity & bird constraints
 function gravity() {
