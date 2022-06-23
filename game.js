@@ -11,9 +11,11 @@ let delay = 16.666;
 
 let stage = 0;
 
-let score = 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+let score = 0;
 
-let highscore = window.localStorage.getItem("highscore") || 100000000000000000000000000000000000000000000000000000000000000000;
+let highscore = window.localStorage.getItem("highscore") || 0;
+
+window.localStorage.setItem("highscore", 0);
 
 let newHighscore = "false";
 
@@ -40,7 +42,7 @@ class Pipe {
     constructor(x) {
         this.x = x;
         this.gapPosition = Math.floor(Math.random() * (canvas.height - 300)) + 150;
-        this.gapHeight = 300;
+        this.gapHeight = 150;
         this.scoreCarrier = 12456543456;
     }
     pipeMove() {
@@ -97,60 +99,6 @@ function gameOver() {
         highscore = score;
         newHighscore = "true";
         window.localStorage.setItem("highscore", highscore);
-        alert(`We're no strangers to love
-You know the rules and so do I (do I)
-A full commitment's what I'm thinking of
-You wouldn't get this from any other guy
-I just wanna tell you how I'm feeling
-Gotta make you understand
-Never gonna give you up
-Never gonna let you down
-Never gonna run around and desert you
-Never gonna make you cry
-Never gonna say goodbye
-Never gonna tell a lie and hurt you
-We've known each other for so long
-Your heart's been aching, but you're too shy to say it (say it)
-Inside, we both know what's been going on (going on)
-We know the game and we're gonna play it
-And if you ask me how I'm feeling
-Don't tell me you're too blind to see
-Never gonna give you up
-Never gonna let you down
-Never gonna run around and desert you
-Never gonna make you cry
-Never gonna say goodbye
-Never gonna tell a lie and hurt you
-Never gonna give you up
-Never gonna let you down
-Never gonna run around and desert you
-Never gonna make you cry
-Never gonna say goodbye
-Never gonna tell a lie and hurt you
-We've known each other for so long
-Your heart's been aching, but you're too shy to say it (to say it)
-Inside, we both know what's been going on (going on)
-We know the game and we're gonna play it
-I just wanna tell you how I'm feeling
-Gotta make you understand
-Never gonna give you up
-Never gonna let you down
-Never gonna run around and desert you
-Never gonna make you cry
-Never gonna say goodbye
-Never gonna tell a lie and hurt you
-Never gonna give you up
-Never gonna let you down
-Never gonna run around and desert you
-Never gonna make you cry
-Never gonna say goodbye
-Never gonna tell a lie and hurt you
-Never gonna give you up
-Never gonna let you down
-Never gonna run around and desert you
-Never gonna make you cry
-Never gonna say goodbye
-Never gonna tell a lie and hurt you`);
     }
     stage = 0;
 }
